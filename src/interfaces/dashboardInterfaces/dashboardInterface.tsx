@@ -30,3 +30,12 @@ export interface TeamMember {
   role: string;
   imageUrl: string;
 }
+
+export interface pricePlanInterface {
+  memberShipDuration: string;
+  desp: string;
+  includedFeatures: any;
+  payDuration: string;
+  planPrice: string;
+  planCurrency: string;
+}

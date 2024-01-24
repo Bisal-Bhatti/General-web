@@ -21,7 +21,7 @@ const navigation: NavigationItem[] = [
   { name: "Dashboard", href: "/", current: true },
   { name: "Team", href: "/Team", current: false },
   { name: "404 Page", href: "/404", current: false },
-  { name: "Calendar", href: "#", current: false },
+  { name: "Price Plans", href: "/Price-Plans", current: false },
   { name: "Reports", href: "#", current: false },
 ];
 
