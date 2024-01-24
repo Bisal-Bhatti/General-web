@@ -44,7 +44,7 @@ const PricingPlan: React.FC = () => {
         </p>
       </div>
       {data?.map((v, i) => {
-        return <PricePlans Plandata={v} />;
+        return <PricePlans Plandata={v} key={i} />;
       })}
     </div>
   );
