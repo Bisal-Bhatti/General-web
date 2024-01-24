@@ -1,7 +1,8 @@
 import React from "react";
 import CardComponent from "../../components/CardComponent/CardComponent";
+import { TeamMember } from "../../interfaces/dashboardInterfaces/dashboardInterface";
 
-const TeamData = [
+const TeamData: TeamMember[] = [
   {
     name: "Leslie Alexander",
     role: "Co-Founder / CEO",
@@ -40,7 +41,7 @@ const TeamData = [
   },
 ];
 
-const Team = () => {
+const Team: React.FC = () => {
   return (
     <div>
       <header className="bg-white shadow">
@@ -53,7 +54,7 @@ const Team = () => {
       <div className="pt-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-4">
           {TeamData?.map((v, i) => {
-            return <CardComponent data={v} />;
+            return <CardComponent data={v} key={i} />;
           })}
         </div>
       </div>

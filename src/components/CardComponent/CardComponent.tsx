@@ -1,6 +1,11 @@
 import React from "react";
+import { TeamMember } from "../../interfaces/dashboardInterfaces/dashboardInterface";
 
-const CardComponent = ({ data }) => {
+export interface cardCompChild {
+  data: TeamMember;
+}
+
+const CardComponent: React.FC<cardCompChild> = ({ data }) => {
   return (
     <div className="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-full">
       <div className="relative h-56 mx-4 -mt-6 bg-cover bg-center overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">

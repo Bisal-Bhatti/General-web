@@ -35,12 +35,12 @@ function classNames(...classes: (string | boolean)[]): string {
   return classes.filter(Boolean).join(" ");
 }
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <>
       <Disclosure as="nav" className="bg-gray-800">
         {({ open }: DisclosureProps) => (
-          <>
+          <div>
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <div className="flex h-16 items-center justify-between">
                 <div className="flex items-center">
@@ -200,7 +200,7 @@ const Header = () => {
                 </div>
               </div>
             </Disclosure.Panel>
-          </>
+          </div>
         )}
       </Disclosure>
     </>
