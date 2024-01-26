@@ -4,6 +4,7 @@ import Dashboard from "./Pages/Dashboard/Dashboard";
 import Team from "./Pages/Team/Team";
 import NotFoundPage from "./Pages/404Page/NotFoundPage";
 import PricingPlan from "./Pages/PricingPlan/PricingPlan";
+import ContactForm from "./Pages/ContactUs/ContactForm";
 
 function App() {
   return (
@@ -13,6 +14,10 @@ function App() {
       <Route
         path="/Price-Plans"
         element={<DashboardLayout children={<PricingPlan />} />}
+      />
+      <Route
+        path="/contact-us"
+        element={<DashboardLayout children={<ContactForm />} />}
       />
       <Route
         path="/404"
